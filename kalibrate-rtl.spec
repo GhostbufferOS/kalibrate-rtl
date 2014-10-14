@@ -6,10 +6,10 @@
 Name:             kalibrate-rtl
 URL:              http://github.com/steve-m/kalibrate-rtl
 Version:          0.4.1
-Release:          2.%{git_suffix}%{?dist}
+Release:          3.%{git_suffix}%{?dist}
 License:          BSD
 BuildRequires:    autoconf, automake, rtl-sdr-devel, fftw-devel
-BuildRequires:    libusb-devel
+BuildRequires:    libusbx-devel
 Group:            Applications/Communications
 Summary:          GSM based frequency calibration for rtl-sdr
 Source0:          https://github.com/steve-m/%{name}/archive/%{git_commit}/%{name}-%{git_commit}.tar.gz
@@ -39,6 +39,9 @@ mv %{buildroot}%{_bindir}/kal %{buildroot}%{_bindir}/kal-rtl
 %{_bindir}/*
 
 %changelog
+* Tue Oct 14 2014 Jaroslav Škarvada <jskarvad@redhat.com> - 0.4.1-3.20141008gitaae11c8a
+- required libusbx-devel instead of libusb-devel
+
 * Fri Oct 10 2014 Jaroslav Škarvada <jskarvad@redhat.com> - 0.4.1-2.20141008gitaae11c8a
 - Fixed source URL according to fedora review
 
