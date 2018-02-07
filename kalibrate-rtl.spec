@@ -6,7 +6,7 @@
 Name:             kalibrate-rtl
 URL:              http://github.com/steve-m/kalibrate-rtl
 Version:          0.4.1
-Release:          9.%{git_suffix}%{?dist}
+Release:          10.%{git_suffix}%{?dist}
 License:          BSD
 BuildRequires:    autoconf, automake, rtl-sdr-devel, fftw-devel
 BuildRequires:    libusbx-devel
@@ -39,6 +39,9 @@ mv %{buildroot}%{_bindir}/kal %{buildroot}%{_bindir}/kal-rtl
 %{_bindir}/*
 
 %changelog
+* Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.4.1-10.20141008gitaae11c8a
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
+
 * Thu Aug 03 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.4.1-9.20141008gitaae11c8a
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild
 
