@@ -8,6 +8,7 @@ URL:              http://github.com/steve-m/kalibrate-rtl
 Version:          0.4.1
 Release:          10.%{git_suffix}%{?dist}
 License:          BSD
+BuildRequires:  gcc-c++
 BuildRequires:    autoconf, automake, rtl-sdr-devel, fftw-devel
 BuildRequires:    libusbx-devel
 Group:            Applications/Communications
