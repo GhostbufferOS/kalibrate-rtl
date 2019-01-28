@@ -11,7 +11,6 @@ License:          BSD
 BuildRequires:  gcc-c++
 BuildRequires:    autoconf, automake, rtl-sdr-devel, fftw-devel
 BuildRequires:    libusbx-devel
-Group:            Applications/Communications
 Summary:          GSM based frequency calibration for rtl-sdr
 Source0:          https://github.com/steve-m/%{name}/archive/%{git_commit}/%{name}-%{git_commit}.tar.gz
 
